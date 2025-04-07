@@ -53,6 +53,11 @@ Uncomment `real program` code block in `main.py`
 ```shell
 $ python main.py
 ```
+### Convert PDF to Text and Find Entities
+Uncomment `find entities from pdf` code block in `main.py`
+```shell
+$ python main.py
+```
 
 ## TODO
 - CNN model

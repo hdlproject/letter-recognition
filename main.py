@@ -4,7 +4,7 @@ from cnn_hyperopt import LetterRecognitionModelHyperOpt
 from ocr import OCR
 from nlp import NLP
 
-# hyperparameter optimization step
+# # hyperparameter optimization step
 # if __name__ == '__main__':
 #     lrm = LetterRecognitionModelHyperOpt()
 #     lrm.get_data()
@@ -13,7 +13,7 @@ from nlp import NLP
 #
 #     print("Best: {}".format(best))
 
-# model testing step
+# # model testing step
 # if __name__ == '__main__':
 #     lrm = LetterRecognitionModel()
 #     lrm.get_data()
@@ -21,7 +21,7 @@ from nlp import NLP
 #
 #     print(lrm.predict(lrm.X_test[0]))
 
-# real program
+# # real program
 # if __name__ == '__main__':
 #     vr = VideoReader()
 #     lrm = LetterRecognitionModel()
@@ -42,8 +42,11 @@ from nlp import NLP
 
 # find entities from pdf
 if __name__ == '__main__':
+    # convert pdf to text using Google Tesseract
     ocr = OCR()
     result = ocr.get_text('ocr_input.pdf')
+    print(result)
 
-    nlp = NLP()
-    nlp.get_ner(result)
+    # extract entities using ChatGPT
+    # nlp = NLP()
+    # nlp.get_ner(result)

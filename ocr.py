@@ -1,5 +1,4 @@
 import pdf2image
-from PIL import Image
 import pytesseract
 
 
